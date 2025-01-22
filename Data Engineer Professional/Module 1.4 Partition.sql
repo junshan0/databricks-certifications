@@ -20,3 +20,20 @@ CREATE OR REPLACE TABLE world_population_partition (
 insert into world_population_partition values(1, 'India', 'Asia');
 insert into world_population_partition values(2, 'China', 'Asia');
 insert into world_population_partition values(3, 'USA', 'North America');
+
+
+-- COMMAND ----------
+
+ 
+USE CATALOG dataatexternallocation;
+USE SCHEMA DEFAULT;
+
+DESCRIBE world_population_partition;
+
+-- COMMAND ----------
+
+DESCRIBE EXTENDED world_population_partition;
+
+-- COMMAND ----------
+
+SHOW TBLPROPERTIES world_population_partition;
